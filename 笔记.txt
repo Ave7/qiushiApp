@@ -1,0 +1,55 @@
+		真机调试:
+				手机打开开发者模式和usb调试，并且用遨软投屏用wifi投屏到电脑即可。
+		微信工具调试:
+				第一次使用在settings文件中输入正确的微信开发者工具路径
+				并且在微信开发者工具中开启设置开启服务端口
+			
+		
+		引入css官方样式库:
+			创建官方的hello-uniapp模板，找到app.vue中引入的uni样式和uni.ttf文件，并复制到自己项目vue.app中。
+		使用官方的横向滚动:
+			在uni的官方模板中，pahes.json中搜索关键字，找到path路径，获取对应代码。
+			
+		引入自定义图标库:
+			阿里巴巴图库:
+				1.找到项目中所需的图标
+				2.添加至项目，方便以后继续添加图标
+				3.下载到本地之后将iconfont.css放到common文件中
+				4.需要删除iconfont.css中引入的外部文件，只留一行date(前缀src需要留下)。
+				5.要注意文件分号
+				5.将字体文件引入vue.app全局样式中。
+				6.使用:<view class="icon iconfont icon-diaoshi"></view>
+		引入文字特效animate:
+				https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css 保存并下载，复制到common中，并全局引入
+				
+		
+		配置app全局样式:
+		
+		
+		字体特效的使用:
+			<view class="view-box animated" hover-class="hover bounceIn" hover-stay-time='持续毫秒值'>我的</view>
+			.view-box{
+				width: 100rpx;
+				height: 100rpx;
+				background-color: #007AFF;
+			}
+			.hover {
+				width: 100rpx;
+				height: 100rpx;
+				background-color: red;
+			}
+		
+		
+		
+		
+		
+		
+		onLaunch: function() {  //初始化调用
+			console.log('App Launch')
+		},
+		onShow: function() {   //显示时调用
+			console.log('App Show')
+		},
+		onHide: function() {   //隐藏时调用
+			console.log('App Hide')
+		}
